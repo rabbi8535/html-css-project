@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#A9A9A9;
+    scroll-behavior: smooth;
+  
+    
+    
+}
+.container{
+    width: 90%;
+    margin: 5% auto;
+    background:#ffff;
+    border-radius: 5px;
+   
+}
+form div > label{
+    display: block;
+    line-height: 2em;
+}
+form div > input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    
+}
+form div > select, div > textarea, div > input{
+    border: 1px solid black;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+
+
+
+}
+form legend{
+    grid-column: 1/-1;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline 1px wavy greenyellow;
+    text-underline-offset:10px;
+    color: red;
+}
+
+form div:nth-child(6){
+    grid-column: 1/-1;
+    
+  
+}
+
+form textarea{
+    width: 100%;
+    height: 20vh;
+    resize: none;
+}
+form  select{
+    width: 100%;
+    padding: 9px;
+    cursor: pointer;
+    
+}
+
+.container input[type="file"] {
+    border: 1px solid black;
+    padding: 9px;
+    cursor: pointer;
+}
+.container input[type="date"]{
+    cursor: pointer;
+}
+
+.container input[type="button"]{
+    width: 150px;
+    display: block;
+    margin: auto;
+    grid-column: 1/-1;
+    padding: 10px;
+    cursor: pointer;
+    background: skyblue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+
+/* media query*/
+
+@media screen and (max-width:450px){
+    form > div{
+        display: block;
+        width: 100%;
+        grid-column: 1/-1;
+    }
+    form div > input{
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    
+
+   
+}

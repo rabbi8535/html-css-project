@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    color: #706c70;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tittle{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    letter-spacing: 8px;
+    text-transform: capitalize;
+
+    & span{
+        background: #706c70;
+        color: white;
+        padding: 20px;
+    }
+}
+
+.bg-1{
+    background: url(images/image1.png);
+    min-height: 100%;
+    
+}
+
+.bg-2{
+    background: url(images/image2.png);
+    min-height: 400px;
+    
+}
+.bg-3{
+    background: url(images/image3.png);
+    min-height: 400px;
+    
+}
+.bg-4{
+    background: url(images/image1.png);
+    min-height: 100%
+    
+}
+.bg-1,.bg-2,.bg-3,.bg-4{
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+
+}
+.section{
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.dark{
+    background: #242424;
+}
+
